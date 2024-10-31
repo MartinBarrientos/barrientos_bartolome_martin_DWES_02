@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datos reserva</h1>
+    <form action="../php/validacionDatos.php" method="POST">
+
+        <label for="nombre">Nombre </label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="apellido">Apellido </label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <label for="dni">DNI </label>
+        <input type="text" name="dni" id="dni">
+        <br>
+        <label for="tipoVehiculo">Tipo de vehículo </label>
+        <select name="vehiculo" id="vehiculo">
+            <option value=""></option>
+            <option value="Lancia Stratos">Lancia Stratos</option>
+            <option value="Audi Quattro">Audi Quattro</option>
+            <option value="Ford Escort RS1800">Ford Escort RS1800</option>
+            <option value="Subaru Impreza 555">Subaru Impreza 555</option>
+        </select>
+        <br>
+        <label for="fechaReserva">Fecha de inicio de la Reserva</label>
+        <input type="date" name="fecha" id="fecha">
+        <br>
+        <label for="dias">Duracion de la reserva </label>
+        <input type="number" name="dias" id="dias">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
